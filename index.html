@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Editor - Create & Download Pixel Art</title>
+    <meta name="description" content="Free online pixel art editor. Create, design, and download pixel art for free.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 Pixel Art Editor</h1>
+            <p class="subtitle">Create beautiful pixel art in your browser</p>
+        </header>
+
+        <div class="editor-wrapper">
+            <div class="canvas-section">
+                <div class="canvas-container">
+                    <canvas id="pixelCanvas"></canvas>
+                </div>
+                
+                <div class="canvas-controls">
+                    <label for="gridSize">Grid Size: <span id="gridSizeValue">32</span>x<span id="gridSizeValue2">32</span></label>
+                    <input type="range" id="gridSize" min="16" max="64" value="32">
+                </div>
+            </div>
+
+            <div class="tools-section">
+                <div class="tool-group">
+                    <h3>🛠️ Tools</h3>
+                    <div class="tool-buttons">
+                        <button class="tool-btn active" data-tool="draw">✏️ Draw</button>
+                        <button class="tool-btn" data-tool="erase">🧹 Erase</button>
+                        <button class="tool-btn" data-tool="fill">🪣 Fill</button>
+                    </div>
+                </div>
+
+                <div class="tool-group">
+                    <h3>🎨 Colors</h3>
+                    <div class="color-palette" id="colorPalette"></div>
+                    <div class="custom-color">
+                        <label for="customColor">Custom:</label>
+                        <input type="color" id="customColor" value="#000000">
+                    </div>
+                </div>
+
+                <div class="tool-group">
+                    <h3>💾 Actions</h3>
+                    <button class="action-btn download-btn" id="downloadBtn">⬇️ Download PNG</button>
+                    <button class="action-btn clear-btn" id="clearBtn">🗑️ Clear Canvas</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Made with ❤️ by <a href="https://designroadmap.com" target="_blank">DesignRoadmap</a></p>
+            <p class="tip">💡 Tip: Click and drag to draw, use the fill tool for quick coloring!</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
