@@ -1,5 +1,4 @@
 # pixel-art-editor
-Pixel Art Editor
 A free, open-source pixel art editor that runs entirely in your browser. Create, design, and download pixel art with ease!
 
 Features
